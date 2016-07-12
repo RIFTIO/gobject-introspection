@@ -25,7 +25,6 @@ config.status
 config.sub
 configure
 depcomp
-gtk-doc.make
 INSTALL
 install-sh
 libtool

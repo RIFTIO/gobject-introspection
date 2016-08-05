@@ -144,6 +144,7 @@ class CCompiler(object):
 
         else:
             # libtool case: assemble linker command arguments, like we did before
+            args.append('-Wl,--no-as-needed')
             args.append('-L.')
             for library in libraries:
                 if library.endswith(".la"):  # explicitly specified libtool library
